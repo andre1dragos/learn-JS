@@ -1,0 +1,229 @@
+html
+{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: black;
+    color: whitesmoke;
+}
+
+h1
+{
+    width: 100%;
+    margin: 5rem auto;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+form
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.nameDel
+{
+    width: 70%;
+    height: 6rem;
+    background: #ecf0f1;
+    padding: 0 1rem;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 600;
+    outline: none;
+    border-radius: 1rem 0 0 1rem;
+    border: 1px solid whitesmoke;
+}
+
+.nameDel::placeholder
+{
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #c0bdbd;
+    font-style: italic;
+    text-align: center;
+}
+
+.createDel
+{
+    width: 10%;
+    height: 6rem;
+    background: green;
+    border: 1px solid green;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+}
+
+hr
+{
+    margin-bottom: 5rem;
+}
+
+.List
+{
+    width: 100%;
+    list-style: none;
+}
+
+.List li
+{
+    position: relative;
+    background: #ecf0f1;
+    width: 80%;
+    height: 3rem;
+    box-shadow: 2px 3px 4px darkgoldenrod;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    border: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: crimson;
+    font-weight: 700;
+    transition: .5s linear;
+}
+
+.List li input
+{
+    position: absolute;
+    width: 10rem;
+    min-width: 10rem;
+    height: 2.5rem;
+    margin: 0 3rem;
+    padding: 0 .5rem;
+    border: none;
+    border-radius: .5px;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.List li input::placeholder
+{
+    color: #c0bdbd;
+    font-style: italic;
+    text-transform: lowercase;
+}
+.List li span
+{
+    position: absolute;
+    width: 4rem;
+    height: 3rem;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+    background: crimson;
+    border: .1px solid crimson;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1200px){
+
+    h1
+    {
+        font-size: 1.8rem;
+    }
+
+        .nameDel
+    {
+        width: 80%;
+        height: 4rem;
+        font-size: 2.2rem;
+        line-height: 4rem;
+        font-weight: 500;
+    }
+
+    .nameDel::placeholder
+    {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .createDel
+    {
+        width: 5rem;
+        height: 4rem;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .List li
+    {
+        width: 90%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: none;
+        margin: 0 auto 10rem;
+        padding: 0;
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 800;
+    }
+
+    .List li input
+    {
+        width: 100%;
+        position: static;
+        display: block;
+        height: 3rem;
+        margin: 0;
+        padding: 0 .5rem;
+        transform: translateY(0);
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        outline: none;
+    }
+
+    .List li input::placeholder
+    {
+        text-transform: lowercase;
+    }
+
+    .List li input:nth-child(2),
+    .List li input:nth-child(3)
+    {
+        width: 50%;
+    }
+
+    .List li span
+    {
+        width: 2rem;
+        height: 9rem;
+        left: 0;
+        font-size: 2rem;
+    }
+
+}
