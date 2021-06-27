@@ -15,15 +15,30 @@
 <body>
 
     <h1>Route Planner - Bew Guildford Branch</h1>
+    <div class="wrapper">
+        <div class="column">  
+            <hr class="topLine">       
+            <form autocomplete="off">
+                <input class="nameLdnDel" type="text" name="text" required placeholder="type London drop">
+                <button class="createDel" id="createDel1" type="submit">+</button>
+            </form>
+            <hr>
 
-    <form autocomplete="off">
-        <input class="nameDel" type="text" name="text" required >
-        <button class="createDel" type="submit">+</button>
-    </form>
-    <hr>
+            <ol class="List" id="ldnList"></ol>
+        </div>
+        
+        <div class="column">
+            <hr class="topLine">
+            <form autocomplete="off">
+                <input class="nameOtherDel" type="text" name="text" required placeholder="type Local drop">
+                <button class="createDel" id="createDel2" type="submit">+</button>
+            </form>
+            <hr>
 
-    <ol class="List" class="ldnList"></ol>
+            <ol class="List" id="othersList"></ol>
+        </div>
    
+    </div>
 </body>
 
 <script src="app.js"></script>
