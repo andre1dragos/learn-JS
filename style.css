@@ -17,6 +17,20 @@ body
     color: #f5f5f5;
 }
 
+.square
+{
+    width: 25rem;
+    height: 25rem;
+    margin: 5rem auto;
+}
+
+.square > img
+{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
 h1
 {
     width: 100%;
@@ -167,6 +181,12 @@ hr
     font-style: italic;
     text-transform: lowercase;
 }
+
+.List li input:nth-child(2)
+{
+    color: crimson;
+}
+
 .List li span
 {
     position: absolute;
@@ -189,6 +209,11 @@ hr
 {
     box-shadow: 3px 3px 10px #f5f5f5, -3px -3px 10px #f5f5f5 ;
     color: #f5f5f5;
+}
+
+.far
+{
+    font-size: 1.5rem;
 }
 
 @media all and (max-width: 1900px){
@@ -286,6 +311,12 @@ hr
 
 @media all and (max-width: 1300px){
 
+    .square
+    {
+        width: 20rem;
+        height: 20rem;
+    }
+
     h1
     {
         font-size: 1.8rem;
@@ -297,9 +328,9 @@ hr
     }
 
     .topLine
-{
-    display: block;
-}
+    {
+        display: block;
+    }
 
     form
     {
@@ -313,4 +344,5 @@ hr
     {
         width: 70%;
     }
+
 }

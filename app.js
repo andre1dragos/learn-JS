@@ -36,7 +36,7 @@ createBtn1.addEventListener('click', (e)=>{
 
         //create remove button
         const remBtn = document.createElement('span');
-        remBtn.innerHTML = 'x';
+        remBtn.innerHTML = '<i class="far fa-trash-alt"></i>';
         newRow.appendChild(remBtn);
     }
 
@@ -86,7 +86,7 @@ createBtn2.addEventListener('click', (e)=>{
 
         //create remove button
         const remBtn = document.createElement('span');
-        remBtn.innerHTML = 'x';
+        remBtn.innerHTML = '<i class="far fa-trash-alt"></i>';
         newRow.appendChild(remBtn);
     }
 
